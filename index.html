@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10152b">
+  <title>Menfess Informatika 1E</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card" id="formPage">
+      <div class="logo">IF<span>1E</span></div>
+
+      <p class="eyebrow">INFORMATIKA ANGKATAN 2026</p>
+      <h1>Send Your <span>Menfess</span></h1>
+      <p class="subtitle">
+        Ada pesan yang ingin kamu sampaikan?
+        Tulis saja di sini ✨
+      </p>
+
+      <form id="menfessForm">
+        <label for="from">From</label>
+        <input id="from" name="from"
+          placeholder="Nama kamu / Anonymous"
+          maxlength="60" required>
+
+        <label for="to">To</label>
+        <input id="to" name="to"
+          placeholder="Untuk siapa?"
+          maxlength="60" required>
+
+        <label for="song">Song</label>
+        <input id="song" name="song"
+          placeholder="Judul lagu (opsional)"
+          maxlength="100">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"
+          placeholder="Tulis pesanmu di sini..."
+          maxlength="1000" rows="5" required></textarea>
+
+        <button type="submit" id="sendBtn">
+          Kirim Menfess <span>➜</span>
+        </button>
+      </form>
+
+      <p class="privacy">
+        Kirim pesan dengan sopan dan saling menghargai 💜
+      </p>
+    </section>
+
+    <section class="card success hidden" id="successPage">
+      <div class="success-icon">✦</div>
+      <p class="eyebrow">MESSAGE RECEIVED</p>
+      <h1>Thank <span>You!</span></h1>
+      <p class="subtitle">
+        Terima kasih sudah berbagi cerita.
+        Semoga pesanmu membawa kebahagiaan 💌
+      </p>
+      <button id="againBtn" type="button">
+        Kirim pesan lagi? ↗
+      </button>
+      <p class="privacy">Made with ♡ Informatika 1E</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
